@@ -36,16 +36,22 @@ body {
   .normal-18 {
     @apply text-[18px] font-normal leading-[27px] -tracking-[0.36px];
   }
+
   .medium-20 {
     @apply text-[20px] font-medium leading-[34px] -tracking-[0.6px];
   }
+
+  .semibold-86 {
+    @apply text-[50px] leading-[90%] -tracking-[5px] font-semibold md:text-[86px] md:leading-[150%] md:-tracking-[4.3px];
+  }
+
   .extrabold-28 {
     @apply text-[28px] font-extrabold leading-normal -tracking-[0.56px];
   }
-  .extrabold-50 {
-    @apply text-[50px] font-extrabold leading-[70px] -tracking-[1.8px];
+  .extrabold-44 {
+    @apply text-[44px] font-extrabold leading-[133%] -tracking-[0.88px];
   }
   .extrabold-72 {
-    @apply text-[72px] font-extrabold leading-[86.4px] -tracking-[2.16px];
+    @apply text-[50px] font-extrabold leading-[70px] -tracking-[1.8px] md:text-[72px] md:font-extrabold md:leading-[86.4px] md:-tracking-[2.16px];
   }
 }

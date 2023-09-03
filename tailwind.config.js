@@ -32,6 +32,7 @@ module.exports = {
           1: '#52889F',
           // 2.rgba(104, 173, 202, 1)
           2: '#68adca',
+          3: '#6BB0CD',
         },
       },
       backgroundImage: {

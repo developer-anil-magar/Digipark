@@ -13,7 +13,7 @@ const Hero = () => {
       <article className="flex flex-col w-full pr-4 md:pr-0 xl:w-3/5 xl:absolute">
         <SubHeader title="1# best sofware fest 2023 🏆" />
 
-        <h1 className="extrabold-50 md:extrabold-72 text-white-1 mt-4">
+        <h1 className="extrabold-72 text-white-1 mt-4">
           THE SOLUTION TO <br className="hidden md:block" /> YOUR PARKING
           <br className="hidden md:block" /> PROBLEMS
         </h1>
