@@ -1,3 +1,4 @@
 import Hero from './Hero';
+import Pricing from './Pricing';
 
-export { Hero };
+export { Hero, Pricing };
