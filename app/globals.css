@@ -39,6 +39,9 @@ body {
   .medium-20 {
     @apply text-[20px] font-medium leading-[34px] -tracking-[0.6px];
   }
+  .extrabold-28 {
+    @apply text-[28px] font-extrabold leading-normal -tracking-[0.56px];
+  }
   .extrabold-50 {
     @apply text-[50px] font-extrabold leading-[70px] -tracking-[1.8px];
   }

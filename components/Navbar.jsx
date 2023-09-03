@@ -11,9 +11,7 @@ const Navbar = () => {
   return (
     <nav className="padding-x-100 py-6 flex justify-between">
       <Link href="/" className="center">
-        <h1 className="text-white-1 text-[28px] font-extrabold leading-normal -tracking-[0.56px]">
-          DIGIPARK
-        </h1>
+        <h1 className="text-white-1 extrabold-28">DIGIPARK</h1>
       </Link>
 
       <article className="hidden lg:center">
@@ -29,7 +27,7 @@ const Navbar = () => {
 
         {isMobile && <NavMenu isMobile={isMobile} />}
       </div>
-      <button className="hidden md:block text-center text-white-1 button w-[150px] h-10 xl:w-[170px] xl:h-12 normal-16">
+      <button className="hidden md:block button text-center text-white-1 w-[150px] h-10 xl:w-[170px] xl:h-12 normal-16">
         Start Free Trial
       </button>
     </nav>
