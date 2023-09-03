@@ -13,3 +13,36 @@ body {
   scroll-behavior: smooth;
   height: 100%;
 }
+
+@layer components {
+  .center {
+    @apply flex justify-center items-center;
+  }
+  .button {
+    @apply bg-gray-3 border border-gray-2 rounded-[63px];
+  }
+}
+
+@layer utilities {
+  .padding-x-100 {
+    @apply px-4 lg:px-10 xl:px-[100px];
+  }
+  .padding-l-100 {
+    @apply pl-4 lg:pl-10 xl:pl-[100px];
+  }
+  .normal-16 {
+    @apply text-[16px] font-normal leading-normal -tracking-[0.40px];
+  }
+  .normal-18 {
+    @apply text-[18px] font-normal leading-[27px] -tracking-[0.36px];
+  }
+  .medium-20 {
+    @apply text-[20px] font-medium leading-[34px] -tracking-[0.6px];
+  }
+  .extrabold-50 {
+    @apply text-[50px] font-extrabold leading-[70px] -tracking-[1.8px];
+  }
+  .extrabold-72 {
+    @apply text-[72px] font-extrabold leading-[86.4px] -tracking-[2.16px];
+  }
+}
