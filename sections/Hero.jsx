@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { features } from '@/constants';
 import { Map } from '@/public';
-import { SubHeader } from '@/components';
+import { InputBar, SubHeader } from '@/components';
 
 const Hero = () => {
   return (
@@ -22,16 +22,8 @@ const Hero = () => {
           easier for you to find the nearest parking lot with a variety of price
           ranges.
         </p>
-        <div className="flex mt-16 bg-gray-8 rounded-[33px] w-full md:w-[556px] h-[70px] pl-8 py-[11px]">
-          <input
-            type="text"
-            placeholder="Enter your email address"
-            className="w-full h-full bg-transparent  text-white-1 normal-20 focus:outline-none"
-          />
-
-          <button className="w-[200px] h-full bg-blue-1 rounded-[33px] mx-[11px]">
-            Get Access{' '}
-          </button>
+        <div className="mt-16">
+          <InputBar />
         </div>
         <div className="flex gap-9 mt-8">
           {features.map((feature) => (

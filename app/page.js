@@ -1,5 +1,5 @@
 import { Navbar } from '@/components';
-import { Hero, Pricing } from '@/sections';
+import { Features, Hero, Pricing } from '@/sections';
 
 export default function Home() {
   return (
@@ -12,6 +12,9 @@ export default function Home() {
       </section>
       <section>
         <Pricing />
+      </section>
+      <section>
+        <Features />
       </section>
     </main>
   );
