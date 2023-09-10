@@ -6,7 +6,7 @@ import { featureCards } from '@/constants';
 
 const Features = () => {
   return (
-    <section className="flex flex-col xl:flex-row xl:space-x-32 w-full padding-x-100 max-xl:mt-10">
+    <section className="flex gap-52 w-full padding-x-100 max-xl:mt-10">
       <div className="hidden xl:block relative xl:py-16 xl:pl-6">
         <figure className="absolute -rotate-[9deg]">
           <Image
