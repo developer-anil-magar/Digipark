@@ -1,4 +1,4 @@
-import { Tick } from '@/public';
+import { Tick, FourDots, MapIcon, SmartCar } from '@/public';
 
 export const navLinks = [
   {
@@ -35,5 +35,23 @@ export const features = [
   {
     title: 'Free trial 13 days',
     img: Tick,
+  },
+];
+
+export const featureCards = [
+  {
+    id: 1,
+    img: FourDots,
+    description: 'Well organized information',
+  },
+  {
+    id: 2,
+    img: MapIcon,
+    description: 'Google maps integration',
+  },
+  {
+    id: 3,
+    img: SmartCar,
+    description: 'Integrate with car sensor',
   },
 ];

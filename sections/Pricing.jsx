@@ -1,7 +1,7 @@
 const Pricing = () => {
   return (
-    <section className="mt-[112px] px-2 md:px-6">
-      <div className="flex flex-col xl:flex-row gap-8 xl:gap-[120px] bg-gray-3 px-4 md:px-16 py-12 rounded-[40px]">
+    <section className="mt-10 xl:mt-28 px-2 md:px-6">
+      <div className="flex flex-col xl:flex-row gap-8 xl:gap-[120px] bg-gray-3 px-6 md:px-16 py-12 rounded-40">
         <h1 className="text-white-1 extrabold-28 md:extrabold-48 w-full xl:w-[50%]">
           There are systems that offer nearby listings and <br />
           <span className="text-gray-2">competitive prices</span>

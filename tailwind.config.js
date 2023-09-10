@@ -34,11 +34,23 @@ module.exports = {
           // 2.rgba(104, 173, 202, 1)
           2: '#68adca',
           3: '#6BB0CD',
+          4: '#6499AF',
+        },
+        black: {
+          1: '#1F242C',
+          2: '#2A313C',
         },
       },
       backgroundImage: {
         'gradient':
           'linear-gradient(3deg, #151A23 2.41%, rgba(21, 26, 35, 0.00) 96.85%)',
+      },
+      borderRadius: {
+        10: '10px',
+        20: '20px',
+        33: '33px',
+        40: '40px',
+        80: '80px',
       },
     },
   },

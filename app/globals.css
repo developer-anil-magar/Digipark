@@ -25,10 +25,10 @@ body {
 
 @layer utilities {
   .padding-x-100 {
-    @apply px-4 lg:px-10 xl:px-[100px];
+    @apply px-6 lg:px-10 xl:px-[100px];
   }
   .padding-l-100 {
-    @apply pl-4 lg:pl-10 xl:pl-[100px];
+    @apply pl-6 lg:pl-10 xl:pl-[100px];
   }
   .normal-16 {
     @apply text-[16px] font-normal leading-normal -tracking-[0.40px];
@@ -39,6 +39,10 @@ body {
 
   .medium-20 {
     @apply text-[20px] font-medium leading-[34px] -tracking-[0.6px];
+  }
+
+  .semibold-20 {
+    @apply text-xl font-semibold -tracking-[0.6px];
   }
 
   .semibold-86 {

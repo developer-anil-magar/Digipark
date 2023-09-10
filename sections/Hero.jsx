@@ -6,7 +6,7 @@ import { InputBar, SubHeader } from '@/components';
 
 const Hero = () => {
   return (
-    <section className="w-full flex flex-col xl:flex-row padding-l-100 mt-16  relative">
+    <section className="w-full flex flex-col xl:flex-row padding-l-100 lg:mt-16  relative">
       <div className="hidden xl:block w-2/5" />
       <div className="hidden xl:block w-[170px] h-[515px] bg-gradient absolute left-0 top-0 z-10" />
 
@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       </article>
       <div
-        className="w-full h-[500px] lg:h-[680px]"
+        className="w-full h-[300px] md:h-[500px] lg:h-[680px] max-xl:mt-4"
         style={{
           backgroundImage: `url(${Map.src})`,
           backgroundSize: '100% 100%',
