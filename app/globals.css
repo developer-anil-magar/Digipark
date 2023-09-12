@@ -31,6 +31,9 @@ body {
     @apply pl-6 lg:pl-10 xl:pl-[100px];
   }
   .normal-16 {
+    @apply text-[14px] font-normal leading-[30px] -tracking-[0.14px];
+  }
+  .normal-16 {
     @apply text-[16px] font-normal leading-normal -tracking-[0.40px];
   }
   .normal-18 {
@@ -43,6 +46,10 @@ body {
 
   .semibold-20 {
     @apply text-xl font-semibold -tracking-[0.6px];
+  }
+
+  .semibold-80 {
+    @apply text-[80px] font-semibold leading-[128px] -tracking-[0.8px];
   }
 
   .semibold-86 {

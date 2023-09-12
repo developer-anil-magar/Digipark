@@ -1,4 +1,4 @@
-import { Tick, FourDots, MapIcon, SmartCar } from '@/public';
+import { Tick, FourDots, MapIcon, SmartCar, Eren, Mikasa } from '@/public';
 
 export const navLinks = [
   {
@@ -53,5 +53,44 @@ export const featureCards = [
     id: 3,
     img: SmartCar,
     description: 'Integrate with car sensor',
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Eden Yeager',
+    profileImg: Eren,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Risus morbi ultrices sit hac condimentum adipiscing. Risus auctor.',
+    rating: 4.5,
+    ratingFrom: 'from App store',
+  },
+  {
+    id: 2,
+    name: 'Mikasa Ackerman',
+    profileImg: Mikasa,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
+    rating: 4.8,
+    ratingFrom: 'from Play store',
+  },
+  {
+    id: 3,
+    name: 'Eden Yeager',
+    profileImg: Eren,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Risus morbi ultrices sit hac condimentum adipiscing. Risus auctor.',
+    rating: 4.5,
+    ratingFrom: 'from App store',
+  },
+  {
+    id: 4,
+    name: 'Mikasa Ackerman',
+    profileImg: Mikasa,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
+    rating: 4.8,
+    ratingFrom: 'from Play store',
   },
 ];
