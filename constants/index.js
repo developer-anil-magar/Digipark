@@ -93,4 +93,40 @@ export const testimonials = [
     rating: 4.8,
     ratingFrom: 'from Play store',
   },
+  {
+    id: 5,
+    name: 'Eden Yeager',
+    profileImg: Eren,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Risus morbi ultrices sit hac condimentum adipiscing. Risus auctor.',
+    rating: 4.5,
+    ratingFrom: 'from App store',
+  },
+  {
+    id: 6,
+    name: 'Mikasa Ackerman',
+    profileImg: Mikasa,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
+    rating: 4.8,
+    ratingFrom: 'from Play store',
+  },
+  {
+    id: 7,
+    name: 'Eden Yeager',
+    profileImg: Eren,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Risus morbi ultrices sit hac condimentum adipiscing. Risus auctor.',
+    rating: 4.5,
+    ratingFrom: 'from App store',
+  },
+  {
+    id: 8,
+    name: 'Mikasa Ackerman',
+    profileImg: Mikasa,
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
+    rating: 4.8,
+    ratingFrom: 'from Play store',
+  },
 ];

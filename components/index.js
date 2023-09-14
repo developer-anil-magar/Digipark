@@ -5,6 +5,7 @@ import InputBar from './InputBar';
 import FeatureCard from './FeatureCard';
 import TestimonialCard from './TestimonialCard';
 import SwiperCarousel from './SwiperCarousel';
+import Carousel from './Carousel';
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   FeatureCard,
   TestimonialCard,
   SwiperCarousel,
+  Carousel,
 };
