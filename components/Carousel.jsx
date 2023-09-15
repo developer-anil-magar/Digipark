@@ -1,18 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, forwardRef } from 'react';
 
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight } from '@/public';
-import { TestimonialCard } from '.';
-import { testimonials } from '@/constants';
 
-const Carousel = () => {
+const Carousel = ({ children, cardRef }) => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
-  const cardRef = useRef(null);
   const slideDistance = cardRef.current ? cardRef.current.clientWidth + 20 : 0;
 
   const movePrev = () => {
@@ -43,18 +40,11 @@ const Carousel = () => {
   }, []);
 
   return (
-    <article className="relative w-full xl:w-1/2">
+    <section className="relative w-full">
       <div
-        className=" flex gap-5 overflow-x-scroll xl:pl-6 transition ease-linear duration-[duration-2000ms] w-full"
+        className=" flex gap-5 overflow-x-scroll xl:pl-6 w-full carousel-scrollbar"
         ref={carousel}>
-        {testimonials.map((testimonial) => (
-          <div
-            ref={cardRef}
-            key={testimonial.id}
-            className="transition-all ease-linear duration-[duration-2000ms]">
-            <TestimonialCard {...testimonial} />
-          </div>
-        ))}
+        {children}
       </div>
       <div className="flex gap-10">
         <button
@@ -68,8 +58,8 @@ const Carousel = () => {
           <Image src={ArrowRight} alt="arrow left" width={17} height={17} />
         </button>
       </div>
-    </article>
+    </section>
   );
 };
 
-export default Carousel;
+export default forwardRef(Carousel);

@@ -10,7 +10,7 @@ const TestimonialCard = ({
   ratingFrom,
 }) => {
   return (
-    <article className="w-full flex flex-col md:min-w-[302px] h-[352px] bg-black-3 p-8 rounded-14">
+    <article className="w-full flex flex-col min-w-[302px] h-[352px] bg-black-3 p-8 rounded-14">
       <div className="w-full relative">
         <Image src={profileImg} alt={name} width={53} height={53} />
         <h1 className="text-black-4 semibold-80 absolute -top-6 right-0">”</h1>

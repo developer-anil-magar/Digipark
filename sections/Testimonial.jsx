@@ -1,9 +1,25 @@
-import { Carousel, SubHeader } from '@/components';
+'use client';
+import { useRef } from 'react';
+
+import { Carousel, SubHeader, TestimonialCard } from '@/components';
+import { testimonials } from '@/constants';
 
 const Testimonial = () => {
+  const cardRef = useRef(null);
   return (
     <section className="w-full flex flex-col lg:flex-row gap-14 pr-2 max-xl:px-6 lg:pr-6 py-20">
-      <Carousel />
+      <article className="w-full lg:w-[47.1%]">
+        <Carousel cardRef={cardRef}>
+          {testimonials.map((testimonial) => (
+            <div
+              ref={cardRef}
+              key={testimonial.id}
+              className="transition-all ease-linear duration-[duration-2000ms]">
+              <TestimonialCard {...testimonial} />
+            </div>
+          ))}
+        </Carousel>
+      </article>
       <article>
         <SubHeader title="Testimonials from user 🤩" />
         <h1 className="w-[90%] extrabold-48 text-white-1 mt-4">

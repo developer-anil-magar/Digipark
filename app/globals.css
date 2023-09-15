@@ -14,6 +14,18 @@ body {
   height: 100%;
 }
 
+.carousel-scrollbar {
+  scroll-behavior: smooth;
+}
+
+.carousel-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.carousel-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 @layer components {
   .center {
     @apply flex justify-center items-center;
