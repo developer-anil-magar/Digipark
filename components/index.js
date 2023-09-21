@@ -4,7 +4,6 @@ import SubHeader from './SubHeader';
 import InputBar from './InputBar';
 import FeatureCard from './FeatureCard';
 import TestimonialCard from './TestimonialCard';
-import SwiperCarousel from './SwiperCarousel';
 import Carousel from './Carousel';
 
 export {
@@ -14,6 +13,5 @@ export {
   InputBar,
   FeatureCard,
   TestimonialCard,
-  SwiperCarousel,
   Carousel,
 };
