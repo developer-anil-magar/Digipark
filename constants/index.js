@@ -1,4 +1,15 @@
-import { Tick, FourDots, MapIcon, SmartCar, Eren, Mikasa } from '@/public';
+import {
+  Tick,
+  FourDots,
+  MapIcon,
+  SmartCar,
+  Eren,
+  Mikasa,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Twitter,
+} from '@/public';
 
 export const navLinks = [
   {
@@ -128,5 +139,70 @@ export const testimonials = [
       'Lorem ipsum dolor sit amet consectetur. Diam semper odio consectetur faucibus tristique nec vitae volutpat volutpat.',
     rating: 4.8,
     ratingFrom: 'from Play store',
+  },
+];
+
+export const socialIcons = [
+  {
+    id: 1,
+    img: Facebook,
+  },
+  {
+    id: 2,
+    img: Instagram,
+  },
+  {
+    id: 3,
+    img: LinkedIn,
+  },
+  {
+    id: 4,
+    img: Twitter,
+  },
+];
+
+export const footerLinks = [
+  {
+    title: 'address',
+    links: [
+      {
+        name: '8769 Streets 31 1st floor,Semarang, Indonesia',
+        link: 'street: 8769 Streets 31 1st floor,Semarang,Indonesia',
+      },
+    ],
+  },
+  {
+    title: 'contact us on',
+    links: [
+      {
+        name: '+62453539287',
+        link: 'tel:+62453539287',
+      },
+      {
+        name: '+62453540258',
+        link: 'tel:+62453540258',
+      },
+      {
+        name: 'Hello@Tasktion.com',
+        link: 'email:Hello@Tasktion.com',
+      },
+    ],
+  },
+  {
+    title: 'our policies',
+    links: [
+      {
+        name: 'Privacy Policy',
+        link: '/',
+      },
+      {
+        name: 'Term of Use',
+        link: '/',
+      },
+      {
+        name: 'Term of Order',
+        link: '/',
+      },
+    ],
   },
 ];

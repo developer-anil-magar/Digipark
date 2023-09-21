@@ -19,7 +19,7 @@ const TestimonialCard = ({
       <p className="normal-16 text-gray-10 mt-3">{description}</p>
       <div className="flex mt-8">
         <Image src={Star} alt="star" width={18} height={18} />
-        <h3 className="normal-18 text-white-1 ml-1.5">{rating}</h3>
+        <h3 className="medium-18 text-white-1 ml-1.5">{rating}</h3>
 
         <p className="normal-14 text-gray-10 pt-[2px] ml-3">{ratingFrom}</p>
       </div>

@@ -51,6 +51,9 @@ body {
   .normal-18 {
     @apply text-[18px] font-normal leading-[27px] -tracking-[0.36px];
   }
+  .medium-18 {
+    @apply text-[18px] font-medium leading-[27px] -tracking-[0.36px];
+  }
 
   .medium-20 {
     @apply text-[20px] font-medium leading-[34px] -tracking-[0.6px];
