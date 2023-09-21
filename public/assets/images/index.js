@@ -1,4 +1,4 @@
-import Map from './Maps.png';
+import Map from './Maps.webp';
 import Iphone from './iPhone.png';
 import Eren from './Eren.png';
 import Mikasa from './Mikasa.png';
