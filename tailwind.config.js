@@ -28,6 +28,7 @@ module.exports = {
           7: '#ffffff33',
           8: '#252A32',
           9: '#797C80',
+          10: '#7D7C7C',
         },
         blue: {
           1: '#52889F',
@@ -35,10 +36,14 @@ module.exports = {
           2: '#68adca',
           3: '#6BB0CD',
           4: '#6499AF',
+          5: '#4B7C91',
         },
         black: {
           1: '#1F242C',
           2: '#2A313C',
+          3: '#21252B',
+          4: '#4D5155',
+          5: '#41464E',
         },
       },
       backgroundImage: {
@@ -47,6 +52,7 @@ module.exports = {
       },
       borderRadius: {
         10: '10px',
+        14: '14px',
         20: '20px',
         33: '33px',
         40: '40px',

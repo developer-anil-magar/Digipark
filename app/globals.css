@@ -14,6 +14,18 @@ body {
   height: 100%;
 }
 
+.carousel-scrollbar {
+  scroll-behavior: smooth;
+}
+
+.carousel-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.carousel-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 @layer components {
   .center {
     @apply flex justify-center items-center;
@@ -31,6 +43,9 @@ body {
     @apply pl-6 lg:pl-10 xl:pl-[100px];
   }
   .normal-16 {
+    @apply text-[14px] font-normal leading-[30px] -tracking-[0.14px];
+  }
+  .normal-16 {
     @apply text-[16px] font-normal leading-normal -tracking-[0.40px];
   }
   .normal-18 {
@@ -45,6 +60,10 @@ body {
     @apply text-xl font-semibold -tracking-[0.6px];
   }
 
+  .semibold-80 {
+    @apply text-[80px] font-semibold leading-[128px] -tracking-[0.8px];
+  }
+
   .semibold-86 {
     @apply text-[50px] leading-[90%] -tracking-[5px] font-semibold md:text-[86px] md:leading-[150%] md:-tracking-[4.3px];
   }
@@ -55,6 +74,11 @@ body {
   .extrabold-48 {
     @apply text-[48px] font-extrabold leading-[133%] -tracking-[0.88px];
   }
+
+  .extrabold-56 {
+    @apply text-[56px] font-extrabold leading-[67.2px] -tracking-[1.68px];
+  }
+
   .extrabold-72 {
     @apply text-[50px] font-extrabold leading-[70px] -tracking-[1.8px] md:text-[72px] md:leading-[86.4px] md:-tracking-[2.16px];
   }
