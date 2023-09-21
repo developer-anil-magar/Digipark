@@ -74,6 +74,11 @@ body {
   .extrabold-48 {
     @apply text-[48px] font-extrabold leading-[133%] -tracking-[0.88px];
   }
+
+  .extrabold-56 {
+    @apply text-[56px] font-extrabold leading-[67.2px] -tracking-[1.68px];
+  }
+
   .extrabold-72 {
     @apply text-[50px] font-extrabold leading-[70px] -tracking-[1.8px] md:text-[72px] md:leading-[86.4px] md:-tracking-[2.16px];
   }

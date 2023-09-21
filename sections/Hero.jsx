@@ -23,7 +23,7 @@ const Hero = () => {
           ranges.
         </p>
         <div className="mt-16">
-          <InputBar />
+          <InputBar bgInput="bg-gray-8" bgButton="bg-blue-1" />
         </div>
         <div className="flex gap-9 mt-8">
           {features.map((feature) => (
