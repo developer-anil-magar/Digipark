@@ -12,7 +12,7 @@ const Pricing = () => {
             <h1 className="text-white-1 semibold-86">
               99 <span className="text-blue-3">%</span>
             </h1>
-            <p className="normal-18 text-gray-2">
+            <p className="medium-18 text-gray-2">
               Accurate data based on our system
             </p>
           </div>
@@ -21,7 +21,7 @@ const Pricing = () => {
             <h1 className="text-white-1 semibold-86">
               540 <span className="text-blue-3">k+</span>
             </h1>
-            <p className="normal-18 text-gray-2">
+            <p className="medium-18 text-gray-2">
               Users who are actively using the application
             </p>
           </div>

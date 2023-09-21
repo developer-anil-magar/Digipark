@@ -1,5 +1,12 @@
 import { Navbar } from '@/components';
-import { Access, Features, Hero, Pricing, Testimonial } from '@/sections';
+import {
+  Access,
+  Features,
+  Footer,
+  Hero,
+  Pricing,
+  Testimonial,
+} from '@/sections';
 
 export default function Home() {
   return (
@@ -21,6 +28,9 @@ export default function Home() {
       </section>
       <section>
         <Access />
+      </section>
+      <section>
+        <Footer />
       </section>
     </main>
   );
