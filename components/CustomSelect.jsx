@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowDown } from '@/public';
 import useTapAway from '@/utils/useTapAway';
 
-const LocationSelectBox = ({ dropDownOptions, setValue }) => {
+const CustomSelect = ({ dropDownOptions, setValue }) => {
   const areaRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [searchString, setSearchString] = useState('');
@@ -24,12 +24,13 @@ const LocationSelectBox = ({ dropDownOptions, setValue }) => {
   useTapAway({ ref: areaRef, handler: () => setIsOpen(false) });
 
   return (
-    <section ref={areaRef} className="bg-black-1 rounded-140 px-8 py-6 flex">
+    <section className="bg-black-1 rounded-140 px-8 py-6 flex">
       <div
+        ref={areaRef}
         onClick={() => setIsOpen(true)}
         className="relative flex gap-6 items-center">
         <label htmlFor="location" className="text-gray-2 normal-16">
-          Location
+          Location:
         </label>
         <input
           type="text"
@@ -55,13 +56,10 @@ const LocationSelectBox = ({ dropDownOptions, setValue }) => {
                 className="px-4 py-2 cursor-pointer hover:bg-blue-500/5"
                 key={element.lat + element.lng}
                 onClick={() => {
+                  console.log('element', element);
                   setValue((prev) => ({
                     ...prev,
-                    city: element.city,
-                    lat: element.lat,
-                    lng: element.lng,
-                    country: element.country,
-                    parking: element.parking,
+                    ...element,
                   }));
                 }}>
                 {element.city}
@@ -74,4 +72,4 @@ const LocationSelectBox = ({ dropDownOptions, setValue }) => {
   );
 };
 
-export default LocationSelectBox;
+export default CustomSelect;

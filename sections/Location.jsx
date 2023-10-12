@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-import { LocationSelectBox, SubHeader } from '@/components';
+import { CustomSelect, SubHeader } from '@/components';
 import { cities } from '@/constants/cities';
 
 const initialDetails = {
@@ -24,7 +24,7 @@ const Location = () => {
         </h1>
       </div>
       <article className="padding-x-100 mt-10">
-        <LocationSelectBox dropDownOptions={cities} setValue={setLocation} />
+        <CustomSelect dropDownOptions={cities} setValue={setLocation} />
       </article>
     </section>
   );

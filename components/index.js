@@ -5,7 +5,7 @@ import InputBar from './InputBar';
 import FeatureCard from './FeatureCard';
 import TestimonialCard from './TestimonialCard';
 import Carousel from './Carousel';
-import LocationSelectBox from './LocationSelectBox';
+import CustomSelect from './CustomSelect';
 
 export {
   Navbar,
@@ -15,5 +15,5 @@ export {
   FeatureCard,
   TestimonialCard,
   Carousel,
-  LocationSelectBox,
+  CustomSelect,
 };
