@@ -56,7 +56,6 @@ const CustomSelect = ({ dropDownOptions, setValue }) => {
                 className="px-4 py-2 cursor-pointer hover:bg-blue-500/5"
                 key={element.lat + element.lng}
                 onClick={() => {
-                  console.log('element', element);
                   setValue((prev) => ({
                     ...prev,
                     ...element,
