@@ -4,6 +4,7 @@ import {
   Features,
   Footer,
   Hero,
+  Location,
   Pricing,
   Testimonial,
 } from '@/sections';
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
       <section>
         <Features />
+      </section>
+      <section>
+        <Location />
       </section>
       <section>
         <Testimonial />

@@ -11,6 +11,7 @@ module.exports = {
         'background': '#151a23',
         white: {
           1: '#ffffff',
+          2: 'rgba(255, 255, 255, 0.10)',
         },
         gray: {
           1: '#878C91',
@@ -56,7 +57,9 @@ module.exports = {
         20: '20px',
         33: '33px',
         40: '40px',
+        63: '63px',
         80: '80px',
+        140: '140px',
       },
     },
   },
