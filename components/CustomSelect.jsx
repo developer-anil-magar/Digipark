@@ -1,25 +1,20 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { ArrowDown } from '@/public';
-import useTapAway from '@/utils/useTapAway';
+import { useDebounce, useTapAway } from '@/utils';
 
 const CustomSelect = ({ dropDownOptions, setValue }) => {
   const areaRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [searchString, setSearchString] = useState('');
-  const [options, setOptions] = useState(dropDownOptions);
 
-  useEffect(() => {
-    const delayDebounce = setTimeout(() => {
-      const filteredOptions = dropDownOptions.filter((option) =>
-        option.city.toLowerCase().includes(searchString?.toLowerCase())
-      );
-      setOptions(filteredOptions);
-    }, 1000);
-    return () => clearTimeout(delayDebounce);
-  }, [searchString]);
+  const debouncedSearchValue = useDebounce(searchString);
+
+  const filteredOptions = dropDownOptions.filter((option) =>
+    option.city.toLowerCase().includes(debouncedSearchValue?.toLowerCase())
+  );
 
   useTapAway({ ref: areaRef, handler: () => setIsOpen(false) });
 
@@ -51,7 +46,7 @@ const CustomSelect = ({ dropDownOptions, setValue }) => {
         />
         {isOpen && (
           <ul className="absolute top-12 flex flex-col w-full bg-black-1 text-gray-2 max-h-[200px] z-10 overflow-auto carousel-scrollbar">
-            {options?.map((element) => (
+            {filteredOptions?.map((element) => (
               <li
                 className="px-4 py-2 cursor-pointer hover:bg-blue-500/5"
                 key={element.lat + element.lng}
@@ -60,6 +55,7 @@ const CustomSelect = ({ dropDownOptions, setValue }) => {
                     ...prev,
                     ...element,
                   }));
+                  setSearchString(element.city);
                 }}>
                 {element.city}
               </li>

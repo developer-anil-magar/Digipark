@@ -19,5 +19,3 @@ export const useTapAway = ({ ref, handler }) => {
     };
   }, [ref, handler]);
 };
-
-export default useTapAway;

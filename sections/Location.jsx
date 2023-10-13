@@ -14,7 +14,6 @@ const initialDetails = {
 
 const Location = () => {
   const [location, setLocation] = useState(initialDetails);
-  console.log(location);
   return (
     <section className="mt-20">
       <div className="center flex-col w-full gap-4">
