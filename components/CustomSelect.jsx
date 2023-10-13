@@ -23,7 +23,7 @@ const CustomSelect = ({ dropDownOptions, setValue }) => {
       <div
         ref={areaRef}
         onClick={() => setIsOpen(true)}
-        className="relative flex gap-6 items-center">
+        className="relative flex gap-3 items-center">
         <label htmlFor="location" className="text-gray-2 normal-16">
           Location:
         </label>
