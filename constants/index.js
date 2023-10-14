@@ -11,6 +11,8 @@ import {
   Twitter,
 } from '@/public';
 
+import { cities } from './cities';
+
 export const navLinks = [
   {
     title: 'How it works',
@@ -66,6 +68,14 @@ export const featureCards = [
     description: 'Integrate with car sensor',
   },
 ];
+
+export const initialDetails = {
+  city: '',
+  lat: '',
+  lng: '',
+  country: '',
+  parking: '',
+};
 
 export const testimonials = [
   {
@@ -206,3 +216,5 @@ export const footerLinks = [
     ],
   },
 ];
+
+export { cities };

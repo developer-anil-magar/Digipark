@@ -5,7 +5,8 @@ import InputBar from './InputBar';
 import FeatureCard from './FeatureCard';
 import TestimonialCard from './TestimonialCard';
 import Carousel from './Carousel';
-import CustomSelect from './CustomSelect';
+import CustomInputSelect from './CustomInputSelect';
+import Dropdown from './Dropdown';
 
 export {
   Navbar,
@@ -15,5 +16,6 @@ export {
   FeatureCard,
   TestimonialCard,
   Carousel,
-  CustomSelect,
+  CustomInputSelect,
+  Dropdown,
 };

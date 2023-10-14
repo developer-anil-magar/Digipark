@@ -1,16 +1,8 @@
 'use client';
 import { useState } from 'react';
 
-import { CustomSelect, SubHeader } from '@/components';
-import { cities } from '@/constants/cities';
-
-const initialDetails = {
-  city: '',
-  lat: '',
-  lng: '',
-  country: '',
-  parking: '',
-};
+import { CustomInputSelect, Dropdown, SubHeader } from '@/components';
+import { cities, initialDetails } from '@/constants';
 
 const Location = () => {
   const [location, setLocation] = useState(initialDetails);
@@ -22,9 +14,16 @@ const Location = () => {
           EASY WAY TO FIND PARKING LOCATION
         </h1>
       </div>
-      <article className="padding-x-100 mt-10">
-        <CustomSelect dropDownOptions={cities} setValue={setLocation} />
-      </article>
+      <section className="padding-x-100 mt-10">
+        <div className="bg-black-1 rounded-140 px-8 py-6 flex gap-14">
+          <CustomInputSelect
+            label="Location:"
+            dropDownOptions={cities}
+            setValue={setLocation}
+          />
+          <Dropdown />
+        </div>
+      </section>
     </section>
   );
 };
