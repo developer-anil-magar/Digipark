@@ -77,6 +77,36 @@ export const initialDetails = {
   parking: '',
 };
 
+export const priceRange = [
+  {
+    name: '$0.00 - $5.00',
+  },
+  {
+    name: '$5.00 - $10.00',
+  },
+  {
+    name: '$10.00 - $15.00',
+  },
+  {
+    name: '$15.00 - $20.00',
+  },
+];
+
+export const timeRange = [
+  {
+    name: 'hourly',
+  },
+  {
+    name: 'daily',
+  },
+  {
+    name: 'weekly',
+  },
+  {
+    name: 'monthly',
+  },
+];
+
 export const testimonials = [
   {
     id: 1,
