@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { features } from '@/constants';
-import { Map } from '@/public';
+import { MapsImage } from '@/public';
 import { InputBar, SubHeader } from '@/components';
 
 const Hero = () => {
@@ -37,7 +37,7 @@ const Hero = () => {
       <div
         className="w-full h-[300px] md:h-[500px] lg:h-[680px] max-xl:mt-4"
         style={{
-          backgroundImage: `url(${Map.src})`,
+          backgroundImage: `url(${MapsImage.src})`,
           backgroundSize: '100% 100%',
           backgroundRepeat: 'no-repeat',
         }}

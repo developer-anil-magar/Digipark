@@ -10,6 +10,7 @@ import Facebook from './facebook.svg';
 import Instagram from './instagram.svg';
 import LinkedIn from './linkedIn.svg';
 import Twitter from './twitter.svg';
+import MapsImage from './Maps-Image.svg';
 
 export {
   Hamburger,
@@ -24,4 +25,5 @@ export {
   Instagram,
   LinkedIn,
   Twitter,
+  MapsImage,
 };
