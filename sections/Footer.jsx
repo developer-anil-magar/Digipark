@@ -27,9 +27,9 @@ const Footer = () => {
         <article className="flex flex-1 flex-wrap justify-between items-start gap-5 w-full">
           {footerLinks.map((footer) => (
             <div key={footer.title} className="flex flex-col flex-1">
-              <h4 className="semibold-20 text-white-1 uppercase">
+              <h2 className="semibold-20 text-white-1 uppercase">
                 {footer.title}
-              </h4>
+              </h2>
               <ul>
                 {footer.links.map((link) => (
                   <li

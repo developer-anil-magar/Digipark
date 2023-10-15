@@ -2,10 +2,10 @@
 import { useState } from 'react';
 
 import { CustomInputSelect, LeafletMap, SubHeader } from '@/components';
-import { cities, initialDetails, priceRange, timeRange } from '@/constants';
+import { cities, priceRange, timeRange } from '@/constants';
 
 const Location = () => {
-  const [location, setLocation] = useState(initialDetails);
+  const [location, setLocation] = useState(cities[1]);
   const [range, setRange] = useState(priceRange[0]);
   const [time, setTime] = useState(timeRange[0]);
   return (
@@ -42,8 +42,9 @@ const Location = () => {
           </button>
         </div>
       </section>
-      <article className="w-full h-full shadow-[inset_0_35px_60px_-15px_rgba(21, 26, 35, 0.00)]">
-        <LeafletMap />
+      <article className="relative">
+        <LeafletMap location={location} />
+        <div className="absolute top-0 w-full h-full bg-transparent shadow-inset z-[400] rounded-63" />
       </article>
     </section>
   );

@@ -12,6 +12,7 @@ import LinkedIn from './linkedIn.svg';
 import Twitter from './twitter.svg';
 import ArrowDown from './arrow-down.svg';
 import MapsImage from './Maps-Image.svg';
+import MarkerIcon from './marker-icon.svg';
 
 export {
   Hamburger,
@@ -28,4 +29,5 @@ export {
   Twitter,
   ArrowDown,
   MapsImage,
+  MarkerIcon,
 };

@@ -30,13 +30,21 @@ body {
 .leaflet-container {
   width: 100%;
   height: 80vh;
+  border-radius: 63px;
+  border: none;
 }
 .leaflet-layer,
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out,
 .leaflet-control-attribution {
-  filter: invert(100%) sepia(100%) saturate(629%) hue-rotate(170deg)
+  filter: invert(100%) sepia(80%) saturate(629%) hue-rotate(150deg)
     brightness(40%) contrast(100%);
+}
+
+.shadow-inset {
+  -webkit-box-shadow: inset 1px -2px 100px 161px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: inset 1px -2px 100px 161px rgba(0, 0, 0, 0.49);
+  box-shadow: inset 1px -2px 100px 161px rgba(0, 0, 0, 0.49);
 }
 
 @layer components {

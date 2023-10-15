@@ -62,7 +62,7 @@ const CustomInputSelect = ({
         }}
       />
       {isOpen && (
-        <ul className="absolute top-12 flex flex-col w-full bg-black-1 text-gray-2 max-h-[200px] z-10 overflow-auto carousel-scrollbar">
+        <ul className="absolute top-14 flex flex-col w-full bg-black-1 text-gray-2 max-h-[200px] z-[600] overflow-auto carousel-scrollbar rounded-3xl">
           {filteredOptions?.map((element) => (
             <li
               className="px-4 py-2 cursor-pointer hover:bg-blue-500/5"

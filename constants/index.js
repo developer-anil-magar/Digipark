@@ -69,14 +69,6 @@ export const featureCards = [
   },
 ];
 
-export const initialDetails = {
-  city: '',
-  lat: '',
-  lng: '',
-  country: '',
-  parking: '',
-};
-
 export const priceRange = [
   {
     name: '$0.00 - $5.00',

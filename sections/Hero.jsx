@@ -29,7 +29,7 @@ const Hero = () => {
           {features.map((feature) => (
             <div className="flex gap-4" key={feature.title}>
               <Image src={feature.img} alt="tick" width={20} height={20} />
-              <h3 className="normal-16 text-white-1">{feature.title}</h3>
+              <h2 className="normal-16 text-white-1">{feature.title}</h2>
             </div>
           ))}
         </div>
