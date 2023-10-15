@@ -6,6 +6,7 @@ import FeatureCard from './FeatureCard';
 import TestimonialCard from './TestimonialCard';
 import Carousel from './Carousel';
 import CustomInputSelect from './CustomInputSelect';
+import LeafletMap from './LeafletMap';
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   TestimonialCard,
   Carousel,
   CustomInputSelect,
+  LeafletMap,
 };

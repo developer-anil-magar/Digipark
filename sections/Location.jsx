@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-import { CustomInputSelect, SubHeader } from '@/components';
+import { CustomInputSelect, LeafletMap, SubHeader } from '@/components';
 import { cities, initialDetails, priceRange, timeRange } from '@/constants';
 
 const Location = () => {
@@ -42,6 +42,9 @@ const Location = () => {
           </button>
         </div>
       </section>
+      <article className="w-full h-full shadow-[inset_0_35px_60px_-15px_rgba(21, 26, 35, 0.00)]">
+        <LeafletMap />
+      </article>
     </section>
   );
 };
