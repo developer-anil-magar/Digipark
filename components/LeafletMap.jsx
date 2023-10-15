@@ -22,7 +22,7 @@ const LeafletMap = ({ location }) => {
   return (
     <MapContainer
       center={[location.lat, location.lng]}
-      zoom={20}
+      zoom={25}
       scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
