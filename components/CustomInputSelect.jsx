@@ -37,14 +37,14 @@ const CustomInputSelect = ({
     <div
       ref={areaRef}
       onClick={() => setIsOpen(true)}
-      className="relative flex gap-3 items-center">
+      className="relative flex gap-3 items-center w-full max-w-[280px]">
       <label htmlFor={label} className="text-gray-2 normal-16">
         {label}
       </label>
       <input
         type="text"
         id={label}
-        className="bg-transparent border border-white-2 rounded-63 py-2 pl-4 pr-8 focus:border-white-2 focus:ring-0 focus:outline-none placeholder:text-white-1 text-white-1"
+        className="w-full bg-transparent border border-white-2 rounded-63 py-2 pl-4 pr-8 focus:border-white-2 focus:ring-0 focus:outline-none placeholder:text-white-1 text-white-1"
         autoComplete="off"
         placeholder={placeholder}
         value={searchString}

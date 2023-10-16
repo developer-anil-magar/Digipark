@@ -23,13 +23,19 @@ const LeafletMap = ({ location }) => {
     <MapContainer
       center={[location.lat, location.lng]}
       zoom={25}
-      scrollWheelZoom={true}>
+      scrollWheelZoom={true}
+      className="w-full h-[50vh] md:h-[70vh] rounded-63">
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Recenter lat={location.lat} lng={location.lng} />
-      <Marker position={[location.lat, location.lng]} icon={customIcon} />
+      <Marker position={[location.lat, location.lng]} icon={customIcon}>
+        <Popup>
+          <h1 className="semibold-20">City: {location.name}</h1>
+          <h2 className="normal-18">Parking Status: {location.parking}</h2>
+        </Popup>
+      </Marker>
     </MapContainer>
   );
 };
