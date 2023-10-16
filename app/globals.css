@@ -1,3 +1,4 @@
+@import url('leaflet/dist/leaflet.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,6 +26,26 @@ body {
 .carousel-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
+/* .leaflet-container {
+  width: 100%;
+  height: 70vh;
+  border-radius: 63px;
+} */
+
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) sepia(80%) saturate(629%) hue-rotate(170deg)
+    brightness(40%) contrast(100%);
+}
+
+/* .shadow-inset {
+  -webkit-box-shadow: inset 1px -2px 100px 161px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: inset 1px -2px 100px 161px rgba(0, 0, 0, 0.49);
+  box-shadow: inset 1px -2px 100px 161px rgba(0, 0, 0, 0.49);
+} */
 
 @layer components {
   .center {

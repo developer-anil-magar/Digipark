@@ -7,7 +7,7 @@ import { testimonials } from '@/constants';
 const Testimonial = () => {
   const cardRef = useRef(null);
   return (
-    <section className="w-full flex flex-col lg:flex-row gap-14 pr-2 max-xl:px-6 lg:pr-6 py-16">
+    <section className="w-full flex flex-col lg:flex-row gap-14 pr-2 max-xl:px-6 lg:pr-6 py-10 lg:py-32">
       <article className="w-full lg:w-[47.1%]">
         <Carousel cardRef={cardRef}>
           {testimonials.map((testimonial) => (

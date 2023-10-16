@@ -11,6 +11,8 @@ import {
   Twitter,
 } from '@/public';
 
+import { cities } from './cities';
+
 export const navLinks = [
   {
     title: 'How it works',
@@ -64,6 +66,36 @@ export const featureCards = [
     id: 3,
     img: SmartCar,
     description: 'Integrate with car sensor',
+  },
+];
+
+export const priceRange = [
+  {
+    name: '$0.00 - $5.00',
+  },
+  {
+    name: '$5.00 - $10.00',
+  },
+  {
+    name: '$10.00 - $15.00',
+  },
+  {
+    name: '$15.00 - $20.00',
+  },
+];
+
+export const timeRange = [
+  {
+    name: 'hourly',
+  },
+  {
+    name: 'daily',
+  },
+  {
+    name: 'weekly',
+  },
+  {
+    name: 'monthly',
   },
 ];
 
@@ -206,3 +238,5 @@ export const footerLinks = [
     ],
   },
 ];
+
+export { cities };
