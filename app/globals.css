@@ -27,12 +27,6 @@ body {
   background: transparent;
 }
 
-/* .leaflet-container {
-  width: 100%;
-  height: 70vh;
-  border-radius: 63px;
-} */
-
 .leaflet-layer,
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out,

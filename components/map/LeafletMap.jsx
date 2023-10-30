@@ -24,7 +24,7 @@ const LeafletMap = ({ location }) => {
       center={[location.lat, location.lng]}
       zoom={25}
       scrollWheelZoom={true}
-      className="w-full h-[50vh] md:h-[70vh] rounded-63">
+      className="w-full h-[50vh] md:h-[70vh] rounded-63 border-0">
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
