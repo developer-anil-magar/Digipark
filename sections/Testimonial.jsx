@@ -8,13 +8,10 @@ const Testimonial = () => {
   const cardRef = useRef(null);
   return (
     <section className="w-full flex flex-col lg:flex-row gap-14 pr-2 max-xl:px-6 lg:pr-6 py-10 lg:py-32">
-      <article className="w-full lg:w-[47.1%]">
+      <article className="w-full lg:w-[47.1%] tr">
         <Carousel cardRef={cardRef}>
           {testimonials.map((testimonial) => (
-            <div
-              ref={cardRef}
-              key={testimonial.id}
-              className="transition-all ease-linear duration-[duration-2000ms]">
+            <div ref={cardRef} key={testimonial.id}>
               <TestimonialCard {...testimonial} />
             </div>
           ))}
